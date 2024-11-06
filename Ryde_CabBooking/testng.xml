@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="com.qa.utility.Reporting" />
+	</listeners>
+	<test thread-count="5" name="Test">
+		<parameter name="Browser" value="edge" />
+		<parameter name="Url" value="https://www.redbus.in/" />
+		<classes>
+			<class name="com.qa.testscripts.TC_RedBus_RY_003" />
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->
